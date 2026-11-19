@@ -1,0 +1,15 @@
+package fr.tp.contactsv4.data
+
+data class Contact(
+    val id: Long = 0,
+    val nom: String = "",
+    val prenom: String = "",
+    val telephone: String = "",
+    val email: String? = null,
+    val photoUri: String? = null,
+    val latitude: Double? = null,
+    val longitude: Double? = null,
+    val favori: Boolean = false
+) {
+    val nomComplet get() = "$nom $prenom"
+}

@@ -1,0 +1,10 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:background="#FFFFFF">
+    <Toolbar android:id="@+id/barre" android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize" android:title="Contacts V4"
+        android:background="#15355B" android:titleTextColor="#FFFFFF"
+        android:theme="@android:style/ThemeOverlay.Material.Dark.ActionBar" />
+    <androidx.fragment.app.FragmentContainerView android:id="@+id/container"
+        android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" />
+</LinearLayout>

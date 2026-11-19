@@ -1,0 +1,18 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+        android:orientation="vertical" android:padding="16dp">
+        <EditText android:id="@+id/recherche" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:hint="Rechercher un contact"
+            android:singleLine="true" android:inputType="text" />
+        <TextView android:id="@+id/vide" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:text="Chargement…" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/liste"
+            android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"
+            android:paddingBottom="76dp" android:clipToPadding="false" />
+    </LinearLayout>
+    <Button android:id="@+id/ajouter" android:layout_width="56dp" android:layout_height="56dp"
+        android:layout_gravity="bottom|end" android:layout_margin="20dp" android:background="@drawable/fond_ajout"
+        android:elevation="6dp" android:text="+" android:textColor="#FFFFFF" android:textSize="26sp"
+        android:contentDescription="Ajouter un contact" />
+</FrameLayout>
